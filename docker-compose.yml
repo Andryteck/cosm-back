@@ -1,0 +1,10 @@
+version: '3'
+services:
+  cosm.api:
+    image: cosm-back:latest
+    container_name: cosm-back
+    restart: always
+    ports:
+      - 3000:3000
+    volumes:
+      - ./.env:/opt/app/.env
